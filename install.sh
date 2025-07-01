@@ -12,7 +12,7 @@ NC='\033[0m' # No Color (reset)
 if [[ -f .env ]]; then
     set -a && source .env && set +a
 else
-    echo "ERROR: No se encontró el archivo .env. Crea uno con PORTAINER_PORT, N8N_PORT, N8N_TIME_ZONE y N8N_HOST."
+    echo "ERROR: No se encontró el archivo .env. Crea uno."
     exit 1
 fi
 
