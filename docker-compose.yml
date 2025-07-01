@@ -1,5 +1,5 @@
 services:
-  api:
+  evolution_api:
     container_name: evolution_api
     image: atendai/evolution-api:latest
     restart: always
