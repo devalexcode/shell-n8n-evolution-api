@@ -143,7 +143,7 @@ else
 fi
 
 CHECK_APP_MAX_ATTEMPTS=5
-CHECK_APP_DELAY_SECONDS=3
+CHECK_APP_DELAY_SECONDS=5
 
 # Función para validar que un puerto esté accesible externamente para una aplicación
 # Recibe Puerto y Nombre de la Aplicación
