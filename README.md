@@ -109,6 +109,8 @@ chmod +x install.sh
 
 - El script actualizará el sistema, instalará Docker y sus herramientas, añadirá el usuario al grupo `docker` desplegará n8n, Evolution API y Portainer.
 
+![Login n8n](docs/shell.png)
+
 ## Ingresar a n8n
 
 Al finalizar, verás un mensaje indicando la URL de acceso a Portainer:
