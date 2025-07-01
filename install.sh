@@ -121,7 +121,7 @@ if sudo docker container evolution_api >/dev/null 2>&1; then
     echo "Evolution API ya está instalado y configurado."
 else
     echo "Instalando  Evolution API y servicios (corriendo docker-compose.yml) ..."
-    sudo docker-compose up -d
+    sudo docker compose up -d
 
     echo -e "${GREEN} Evolution API y servicios instalados${NC}"
 fi
