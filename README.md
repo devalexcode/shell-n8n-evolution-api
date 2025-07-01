@@ -21,7 +21,7 @@ git clone https://github.com/devalexcode/shell-n8n-evolution-api.git
 ### 2. Ingresa a la carpeta del proyecto
 
 ```bash
-cd shell-n8n-portainer
+cd shell-n8n-evolution-api
 ```
 
 ### 3. Crea el archivo `.env`
