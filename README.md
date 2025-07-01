@@ -148,6 +148,6 @@ Al finalizar, verás un mensaje indicando la URL de acceso a Portainer:
 ## 👨‍💻 Autor
 
 Desarrollado por [Alejandro Robles | Devalex ](http://devalexcode.com)  
-¿Necesitas que lo haga por ti? ¡Estoy para apoyarte! 🤝 https://devalexcode.com/soluciones/n8n-en-servidor-vps
+¿Necesitas que lo haga por ti? ¡Estoy para apoyarte! 🤝 https://devalexcode.com/soluciones/pack-n8n-evolution-api-portainer-vps
 
 ¿Dudas o sugerencias? ¡Contribuciones bienvenidas!
