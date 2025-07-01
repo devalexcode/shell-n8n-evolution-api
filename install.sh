@@ -126,6 +126,22 @@ else
     echo -e "${GREEN} Evolution API y servicios instalados${NC}"
 fi
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Instalación de Portainer (si no está instalado)
+# ─────────────────────────────────────────────────────────────────────────────
+if sudo docker container inspect portainer >/dev/null 2>&1; then
+    echo "Portainer ya está instalado y configurado."
+else
+    echo "Instalando Portainer..."
+    sudo docker volume create portainer_data
+    sudo docker run -d --name portainer --restart=always \
+        -p 8000:8000 -p "${PORTAINER_PORT}":9000 \
+        -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data \
+        portainer/portainer-ce
+    sudo docker restart portainer
+    echo -e "${GREEN}Portainer instalado${NC}"
+fi
+
 CHECK_APP_MAX_ATTEMPTS=5
 CHECK_APP_DELAY_SECONDS=3
 
@@ -156,6 +172,7 @@ check_port_open() {
 
 check_port_open "${N8N_PORT}" "n8n"
 check_port_open "${EVOLUTION_API_PORT}" "Evolution API"
+check_port_open "${PORTAINER_PORT}" "Portainer"
 
 # Refrescar grupos para la sesión actual
 newgrp docker
